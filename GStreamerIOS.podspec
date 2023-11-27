@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GStreamerIOS'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GStreamerIOS.'
+  s.summary          = 'GStreamerIOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,30 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+GStreamer IOS Framework.
                        DESC
 
-  s.homepage         = 'https://github.com/828542/GStreamerIOS'
+  s.homepage         = 'https://stream.studio'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '828542' => 'bouguerra.ludovic@gmail.com' }
-  s.source           = { :git => 'https://github.com/828542/GStreamerIOS.git', :tag => s.version.to_s }
+  s.author           = { '828542' => 'ludovic.bouguerra@stream.studio' }
+  s.source           = { :git => 'https://github.com/stream-studio/GStreamerIOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'GStreamerIOS/Classes/**/*'
+  s.ios.deployment_target = '14.0'
   
-  # s.resource_bundles = {
-  #   'GStreamerIOS' => ['GStreamerIOS/Assets/*.png']
-  # }
+  s.ios.source_files = 'GStreamerIOS/Classes/**/*',  'GStreamerIOS/Headers/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers"',  'FRAMEWORK_SEARCH_PATHS' => '"/Library/Developer/GStreamer/iPhone.sdk"'}
+
+
+
+  s.ios.resource_bundles = {
+     'GStreamerIOS' => ['GStreamerIOS/Assets/**/*']
+   }
+
+  s.ios.libraries = 'resolv', 'iconv', 'stdc++'
+  s.ios.frameworks = 'AssetsLibrary', 'VideoToolbox', 'Avfoundation', 'CoreMedia', 'GStreamer', 'AudioToolbox', 'CoreAudio', 'CoreGraphics'
   # s.dependency 'AFNetworking', '~> 2.3'
+
 end

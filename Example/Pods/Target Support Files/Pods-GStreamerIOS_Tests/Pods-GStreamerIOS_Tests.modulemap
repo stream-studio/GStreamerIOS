@@ -1,0 +1,6 @@
+framework module Pods_GStreamerIOS_Tests {
+  umbrella header "Pods-GStreamerIOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

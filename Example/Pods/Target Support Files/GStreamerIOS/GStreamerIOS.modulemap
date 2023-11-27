@@ -1,0 +1,6 @@
+framework module GStreamerIOS {
+  umbrella header "GStreamerIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

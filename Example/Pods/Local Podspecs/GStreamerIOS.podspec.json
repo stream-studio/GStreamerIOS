@@ -1,0 +1,51 @@
+{
+  "name": "GStreamerIOS",
+  "version": "0.1.0",
+  "summary": "GStreamerIOS",
+  "description": "GStreamer IOS Framework.",
+  "homepage": "https://stream.studio",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "828542": "ludovic.bouguerra@stream.studio"
+  },
+  "source": {
+    "git": "https://github.com/stream-studio/GStreamerIOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "ios": {
+    "source_files": [
+      "GStreamerIOS/Classes/**/*",
+      "GStreamerIOS/Headers/**/*"
+    ],
+    "resource_bundles": {
+      "GStreamerIOS": [
+        "GStreamerIOS/Assets/**/*"
+      ]
+    },
+    "libraries": [
+      "resolv",
+      "iconv",
+      "stdc++"
+    ],
+    "frameworks": [
+      "AssetsLibrary",
+      "VideoToolbox",
+      "Avfoundation",
+      "CoreMedia",
+      "GStreamer",
+      "AudioToolbox",
+      "CoreAudio",
+      "CoreGraphics"
+    ]
+  },
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"",
+    "FRAMEWORK_SEARCH_PATHS": "\"/Library/Developer/GStreamer/iPhone.sdk\""
+  }
+}
