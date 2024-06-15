@@ -352,6 +352,7 @@
 		411304A673F335B8D032C55151E5DABF /* Pods-GStreamerIOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GStreamerIOS_Tests-Info.plist"; sourceTree = "<group>"; };
 		41401E1464BBAB0FCD1FB80BD34D2174 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
 		4259486ED9630F0BF9406971FEBBB2C9 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		4318CB042C1B564E009E6A0E /* GstreamerBackend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GstreamerBackend.h; sourceTree = "<group>"; };
 		4363AA291A98935F1C071513B3F55A3F /* GStreamerIOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GStreamerIOS-Info.plist"; sourceTree = "<group>"; };
 		437C71B151027F0E3679E46CA95D99D1 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
 		43A62ADD32ECF62681851887E5DF59E8 /* URL+FileName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+FileName.swift"; path = "Sources/Quick/URL+FileName.swift"; sourceTree = "<group>"; };
@@ -1044,6 +1045,7 @@
 		C7F864EF2DC5F0177EAF376698E44CC7 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				4318CB042C1B564E009E6A0E /* GstreamerBackend.h */,
 				9B07B074FACF30E6EF054D5F2B01A9FF /* gst_ios_init.h */,
 				E9093164BDD0748EC188ECA977619323 /* GstreamerBackend.h */,
 				A597C09E9F47C8176E399FB4CABB9E9D /* GstreamerIOS-Bridging-Header.h */,

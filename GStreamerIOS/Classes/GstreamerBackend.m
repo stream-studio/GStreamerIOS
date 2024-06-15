@@ -34,6 +34,20 @@
 
 
 
+-(void)createCameraSource{
+    libstudio_create_camera_source(self->ctx);
+}
+
+-(void)createImageSource:(NSString*) path{
+    libstudio_create_image_source(self->ctx, [path UTF8String]);
+}
+
+-(void)switchScene:(int) sceneId{
+    libstudio_switch_scene(self->ctx, sceneId);
+}
+
+
+
 -(void)startStreaming:(NSString*) url{
     libstudio_start_streaming(self->ctx, [url UTF8String]);
 }

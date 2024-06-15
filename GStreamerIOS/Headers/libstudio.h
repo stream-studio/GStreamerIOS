@@ -26,6 +26,12 @@ StudioCtx libstudio_init(void);
  */
 void libstudio_start(StudioCtx ctx, void* vie);
 
+void libstudio_switch_scene(StudioCtx ctx, int scene_id);
+
+void libstudio_create_camera_source(StudioCtx ctx);
+void libstudio_create_image_source(StudioCtx ctx, const char* path);
+
+
 /**
     Start the pipeline the streaming part of the pipeline
     @param ctx LibStudio opaque context

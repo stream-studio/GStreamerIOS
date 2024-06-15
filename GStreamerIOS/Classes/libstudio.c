@@ -94,19 +94,23 @@ StudioCtx libstudio_init(){
     StudioPrivateContext* context = malloc(sizeof(StudioPrivateContext));
     context->pipeline = gst_pipeline_new(NULL);
     
-    GstElement* video_src = gst_element_factory_make("videotestsrc", NULL);
-    g_object_set(video_src, "is-live", TRUE, NULL);
+    
+    
+    GstElement* video_1_src = gst_element_factory_make("videotestsrc", NULL);
+    g_object_set(video_1_src, "is-live", TRUE,  "pattern", 2, NULL);
+    
     
     //GstElement* convert = gst_element_factory_make("glcolorconvert", NULL);
     //context->overlay = gst_element_factory_make("gdkpixbufoverlay", NULL);
     
     GstElement* audio_src = gst_element_factory_make("audiotestsrc", NULL);
-    g_object_set(audio_src, "is-live", TRUE, NULL);
+    g_object_set(audio_src, "is-live", TRUE, "wave", 4, NULL);
     context->tee_video_raw = gst_element_factory_make("tee", NULL);
     context->tee_audio_raw = gst_element_factory_make("tee", NULL);
     
     
     context->video_mixer = gst_element_factory_make("compositor", NULL);
+    g_object_set(context->video_mixer, "background", 1, NULL);
     context->audio_mixer = gst_element_factory_make("audiomixer", NULL);
     
     GstElement* vqueue = gst_element_factory_make("queue", NULL);
@@ -131,12 +135,11 @@ StudioCtx libstudio_init(){
                                             //"texture-target", G_TYPE_STRING, "rectangle",
                                             NULL);
     
-    gst_bin_add_many(GST_BIN_CAST(context->pipeline), video_src, audio_src, context->video_mixer, context->audio_mixer, vqueue, aqueue, context->tee_video_raw, context->tee_audio_raw, context->video_sink, context->audio_sink, NULL);
+    gst_bin_add_many(GST_BIN_CAST(context->pipeline), video_1_src, audio_src, context->video_mixer, context->audio_mixer, vqueue, aqueue, context->tee_video_raw, context->tee_audio_raw, context->video_sink, context->audio_sink, NULL);
     
 
-    gst_element_link_filtered(video_src, context->video_mixer, caps);
+    gst_element_link_filtered(video_1_src, context->video_mixer, caps);
     gst_caps_unref(caps);
-
     
     caps = gst_caps_new_simple("video/x-raw",
                                             "format", G_TYPE_STRING, "NV12",
@@ -173,6 +176,65 @@ StudioCtx libstudio_init(){
     
     
     return context;
+}
+
+
+void libstudio_create_camera_source(StudioCtx ctx){
+    StudioPrivateContext* context = (StudioPrivateContext*)ctx;
+    
+    GstElement* camera = gst_element_factory_make("avfvideosrc", NULL);
+    gst_bin_add(context->pipeline, camera);
+    gst_element_sync_state_with_parent(camera);
+
+    GstCaps* caps = gst_caps_new_simple("video/x-raw",
+                                            "format", G_TYPE_STRING, "NV12",
+                                            "width", G_TYPE_INT, 1920,
+                                            "height", G_TYPE_INT, 1080,
+                                            "framerate", GST_TYPE_FRACTION, 25, 1,
+                                            NULL);
+
+    gst_element_link_filtered(camera, context->video_mixer, caps);
+    gst_caps_unref(caps);
+}
+
+void libstudio_create_image_source(StudioCtx ctx, const char* path){
+    StudioPrivateContext* context = (StudioPrivateContext*)ctx;
+
+    GstElement* file = gst_element_factory_make("giosrc", NULL);
+    g_object_set(file, "location", file, NULL);
+    GstElement *decoder = gst_element_factory_make("jpegdec", NULL);
+    GstElement *freeze = gst_element_factory_make("jpegdec", NULL);
+    
+    gst_bin_add_many(GST_BIN(context->pipeline), file, decoder, freeze, NULL);
+    gst_element_sync_state_with_parent(file);
+    gst_element_sync_state_with_parent(decoder);
+    gst_element_sync_state_with_parent(freeze);
+    gst_element_link(file, decoder);
+    gst_element_link(decoder, freeze);
+    gst_element_link(freeze, context->video_mixer);
+    
+}
+
+void libstudio_switch_scene(StudioCtx ctx, int scene_id){
+    StudioPrivateContext* context = (StudioPrivateContext*)ctx;
+    GstIterator *iterator = gst_element_iterate_sink_pads(context->video_mixer);
+    GValue item = { 0, };
+    GstPad *pad;
+
+    int current_id = 0;
+    while (gst_iterator_next(iterator, &item) == GST_ITERATOR_OK){
+        pad = g_value_get_object (&item);
+        if (current_id == scene_id){
+            g_print("SCENE_ID OK");
+            g_object_set(pad, "alpha", 1.0, FALSE, NULL);
+        }else{
+            g_print("SCENE_ID NOK");
+            g_object_set(pad, "alpha", 0.0, FALSE, NULL);
+        }
+        current_id++;
+    }
+    gst_iterator_free (iterator);
+
 }
 
 void libstudio_start(StudioCtx ctx, void* view){

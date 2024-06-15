@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/GStreamerIOS.svg?style=flat)](https://cocoapods.org/pods/GStreamerIOS)
 [![Platform](https://img.shields.io/cocoapods/p/GStreamerIOS.svg?style=flat)](https://cocoapods.org/pods/GStreamerIOS)
 
+Gstreamer Framework for IOS with a Advanced Studio Framework and Advacanded player examples 
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -20,9 +22,22 @@ it, simply add the following line to your Podfile:
 pod 'GStreamerIOS'
 ```
 
+You'll also need to install Gstreamer Stream Studio Prebuilt Package.
+
+## Use Camera in your application
+
+To use Camera you'll need to set this property in Info.plist
+NSCameraUsageDescription, with for example the following message:  Gstreamer IOS Example needs to access to your camera
+
+## Use Microphone in your application
+
+NSMicrophoneUsageDescription, with for example the following message:  Gstreamer IOS Example needs to access to your microphone 
+
+
+
 ## Author
 
-828542, bouguerra.ludovic@gmail.com
+ludovic.bouguerra@stream.studio
 
 ## License
 

@@ -51,6 +51,18 @@ public class VideoViewController: UIViewController {
 
           
     }
+
+    public func switchScene(sceneId : Int32) {
+        backend?.switchScene(sceneId)
+    }
+    
+    public func createCameraSource() {
+        backend?.createCameraSource()
+    }
+    
+    public func createImageSource(path: String) {
+        backend?.createImageSource(path);
+    }
     
     public func startStreaming(url : String) {
         backend?.startStreaming(url)

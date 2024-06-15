@@ -17,6 +17,10 @@
  */
 -(void)startStreaming:(NSString*) url;
 
+-(void)createCameraSource;
+-(void)createImageSource:(NSString*) path;
+
+-(void)switchScene:(int) sceneId;
 
 /**
     Stop the pipeline streaming part
