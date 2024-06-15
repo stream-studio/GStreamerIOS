@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22D00504A607CE86CFD2E1C0 /* Pods_GStreamerIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E1B791A12A9272A1C6EEA6 /* Pods_GStreamerIOS_Example.framework */; };
+		341CC127F599C2969D434298 /* Pods_GStreamerIOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEABE11495150FBAD5983F59 /* Pods_GStreamerIOS_Example.framework */; };
 		43BFB3222B1181A900CF5555 /* GstreamerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFB3212B1181A900CF5555 /* GstreamerExampleApp.swift */; };
 		43BFB3242B11820100CF5555 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BFB3232B11820100CF5555 /* ContentView.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		F70500E974030E86EED6212D /* Pods_GStreamerIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BA3527C5643A5012FB8725 /* Pods_GStreamerIOS_Tests.framework */; };
+		706A6117260C6774A4975F46 /* Pods_GStreamerIOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA738D5C6E864C53D41743FE /* Pods_GStreamerIOS_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12E7DEC556B8D5B62EA923EB /* Pods-GStreamerIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2378D12156264B887D7CC352 /* Pods-GStreamerIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		35BA3527C5643A5012FB8725 /* Pods_GStreamerIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GStreamerIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BFB3212B1181A900CF5555 /* GstreamerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GstreamerExampleApp.swift; sourceTree = "<group>"; };
 		43BFB3232B11820100CF5555 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		44E1B791A12A9272A1C6EEA6 /* Pods_GStreamerIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GStreamerIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* GStreamerIOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GStreamerIOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -40,11 +36,15 @@
 		607FACE51AFB9204008FA782 /* GStreamerIOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GStreamerIOS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C6834F50769BDC5F1AC38DE /* GStreamerIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GStreamerIOS.podspec; path = ../GStreamerIOS.podspec; sourceTree = "<group>"; };
+		6C6834F50769BDC5F1AC38DE /* GStreamerIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GStreamerIOS.podspec; path = ../GStreamerIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C7249CA82A1BF538498136E /* Pods-GStreamerIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A9243373A775CDABD0AC4004 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CA2A729DC9946CB20CC326C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D74DDE7BE41A9BE80B8345E0 /* Pods-GStreamerIOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FDB48F10518A9B6954BB807A /* Pods-GStreamerIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Example.release.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DEABE11495150FBAD5983F59 /* Pods_GStreamerIOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GStreamerIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA738D5C6E864C53D41743FE /* Pods_GStreamerIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GStreamerIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4EF97FB7FA052D7B56F6CE /* Pods-GStreamerIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Example.release.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F5E9B989B0F051F9412BAEEB /* Pods-GStreamerIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAA1CDF1BE18D407EBC2E11A /* Pods-GStreamerIOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GStreamerIOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D00504A607CE86CFD2E1C0 /* Pods_GStreamerIOS_Example.framework in Frameworks */,
+				341CC127F599C2969D434298 /* Pods_GStreamerIOS_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,18 +60,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70500E974030E86EED6212D /* Pods_GStreamerIOS_Tests.framework in Frameworks */,
+				706A6117260C6774A4975F46 /* Pods_GStreamerIOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A698C604919B6167757C080 /* Frameworks */ = {
+		0FAF796F3C05D556F8483663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				44E1B791A12A9272A1C6EEA6 /* Pods_GStreamerIOS_Example.framework */,
-				35BA3527C5643A5012FB8725 /* Pods_GStreamerIOS_Tests.framework */,
+				DEABE11495150FBAD5983F59 /* Pods_GStreamerIOS_Example.framework */,
+				EA738D5C6E864C53D41743FE /* Pods_GStreamerIOS_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				BEA909BC0E397AC0C97407A5 /* Pods */,
-				3A698C604919B6167757C080 /* Frameworks */,
+				0FAF796F3C05D556F8483663 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,10 +148,10 @@
 		BEA909BC0E397AC0C97407A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				12E7DEC556B8D5B62EA923EB /* Pods-GStreamerIOS_Example.debug.xcconfig */,
-				FDB48F10518A9B6954BB807A /* Pods-GStreamerIOS_Example.release.xcconfig */,
-				2378D12156264B887D7CC352 /* Pods-GStreamerIOS_Tests.debug.xcconfig */,
-				D74DDE7BE41A9BE80B8345E0 /* Pods-GStreamerIOS_Tests.release.xcconfig */,
+				FAA1CDF1BE18D407EBC2E11A /* Pods-GStreamerIOS_Example.debug.xcconfig */,
+				EF4EF97FB7FA052D7B56F6CE /* Pods-GStreamerIOS_Example.release.xcconfig */,
+				F5E9B989B0F051F9412BAEEB /* Pods-GStreamerIOS_Tests.debug.xcconfig */,
+				7C7249CA82A1BF538498136E /* Pods-GStreamerIOS_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,11 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GStreamerIOS_Example" */;
 			buildPhases = (
-				C2A42DA48A31290C502B7CE4 /* [CP] Check Pods Manifest.lock */,
+				E17B2B4978643F169018D72A /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E6F9893DE241D9FDE1959F3C /* [CP] Embed Pods Frameworks */,
+				676F463899D47FB1763858B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,11 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GStreamerIOS_Tests" */;
 			buildPhases = (
-				20FEB25D937B60E7BFDC5822 /* [CP] Check Pods Manifest.lock */,
+				28AECA5C6AC4FC31A2BA3FF1 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				FC5F2B4DA4CA1648B137D896 /* [CP] Embed Pods Frameworks */,
+				41110879252F0808D5EC0A6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,12 +211,12 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FSZ86ZSYCN;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FSZ86ZSYCN;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -261,20 +261,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20FEB25D937B60E7BFDC5822 /* [CP] Check Pods Manifest.lock */ = {
+		28AECA5C6AC4FC31A2BA3FF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GStreamerIOS_Tests-checkManifestLockResult.txt",
 			);
@@ -283,53 +279,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C2A42DA48A31290C502B7CE4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GStreamerIOS_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6F9893DE241D9FDE1959F3C /* [CP] Embed Pods Frameworks */ = {
+		41110879252F0808D5EC0A6B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GStreamerIOS/GStreamerIOS.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GStreamerIOS.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC5F2B4DA4CA1648B137D896 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
@@ -345,7 +301,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GStreamerIOS_Tests/Pods-GStreamerIOS_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		676F463899D47FB1763858B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GStreamerIOS/GStreamerIOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GStreamerIOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GStreamerIOS_Example/Pods-GStreamerIOS_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17B2B4978643F169018D72A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GStreamerIOS_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -493,7 +485,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E7DEC556B8D5B62EA923EB /* Pods-GStreamerIOS_Example.debug.xcconfig */;
+			baseConfigurationReference = FAA1CDF1BE18D407EBC2E11A /* Pods-GStreamerIOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FSZ86ZSYCN;
@@ -543,7 +535,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDB48F10518A9B6954BB807A /* Pods-GStreamerIOS_Example.release.xcconfig */;
+			baseConfigurationReference = EF4EF97FB7FA052D7B56F6CE /* Pods-GStreamerIOS_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FSZ86ZSYCN;
@@ -593,7 +585,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2378D12156264B887D7CC352 /* Pods-GStreamerIOS_Tests.debug.xcconfig */;
+			baseConfigurationReference = F5E9B989B0F051F9412BAEEB /* Pods-GStreamerIOS_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				DEVELOPMENT_TEAM = FSZ86ZSYCN;
@@ -617,7 +609,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D74DDE7BE41A9BE80B8345E0 /* Pods-GStreamerIOS_Tests.release.xcconfig */;
+			baseConfigurationReference = 7C7249CA82A1BF538498136E /* Pods-GStreamerIOS_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				DEVELOPMENT_TEAM = FSZ86ZSYCN;

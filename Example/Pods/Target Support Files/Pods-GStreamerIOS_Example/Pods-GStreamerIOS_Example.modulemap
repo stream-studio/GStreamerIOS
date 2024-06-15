@@ -1,6 +1,0 @@
-framework module Pods_GStreamerIOS_Example {
-  umbrella header "Pods-GStreamerIOS_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

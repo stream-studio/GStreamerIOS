@@ -26,7 +26,7 @@ DEPENDENCIES:
   - Quick (~> 2.2.0)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
     - iOSSnapshotTestCase
     - Nimble
@@ -39,12 +39,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  GStreamerIOS: c8308592b0f8a2a97b9aa20477a15b20ac05e70e
+  GStreamerIOS: 0c4011fc2fdb296ed37de4059d7dbe77d2bdade1
   iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
   Nimble: b279b3ca9e094508778aab5c76417be158d3ad04
   Nimble-Snapshots: 4988d1cf2fe062f13bd2eb87c4279770785e682b
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
 
-PODFILE CHECKSUM: 736032d1588020c003cde45c8d2474cc20655c46
+PODFILE CHECKSUM: b4a9d5e9b63e4a215e077ca8a2aec74127851141
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.5.2
